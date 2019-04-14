@@ -13,6 +13,7 @@ type Feed struct {
 	Type string `json:type`
 }
 
+//
 func RetrieveFeeds() ([]*Feed, error) {
 
 	file, err := os.Open(dataFile)

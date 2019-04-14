@@ -13,6 +13,7 @@ type Matcher interface {
 	Search(fedd *Feed, searchTerm string) ([]*Result, error)
 }
 
+//
 func Match(matcher Matcher, feed *Feed, searchTerm string, results chan<- *Result) {
 	searchResults, err := matcher.Search(feed, searchTerm)
 	if err != nil {
