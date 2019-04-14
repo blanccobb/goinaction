@@ -22,7 +22,7 @@ func Run(searchTerm string) {
 
 	for _, feed := range feeds {
 		matcher, exists := matchers[feed.Type]
-		if !exists := {
+		if !exists {
 			matcher = matchers["default"]
 		}
 
